@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>233</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PSR_ol</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Error! </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelInstruction">
+      <property name="text">
+       <string>What do you want to do? </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonRank">
+      <property name="text">
+       <string>See Rank|1|2|3|</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonFight">
+      <property name="text">
+       <string>Fight!!!!</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonQuit">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonRank</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transfer_Rank()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonQuit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonFight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>transfer_Fight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>transfer_Rank()</slot>
+  <slot>exit()</slot>
+  <slot>transfer_Fight()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogLogin</class>
+ <widget class="QDialog" name="dialogLogin">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>237</width>
+    <height>252</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PSR_ol</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_Username">
+     <property name="text">
+      <string>User name: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="inputUsername"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelPasswrod">
+     <property name="text">
+      <string>Password: </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="inputPassword">
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="input_AlertLabel">
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>252</red>
+           <green>0</green>
+           <blue>6</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>252</red>
+           <green>0</green>
+           <blue>6</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>127</red>
+           <green>127</green>
+           <blue>127</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="buttonLogin">
+     <property name="text">
+      <string>Click me to Login &gt;3&lt;</string>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="buttonRegister">
+     <property name="text">
+      <string>New? Register here! </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="buttonCancel">
+     <property name="text">
+      <string>Cancel 555</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonLogin</sender>
+   <signal>clicked()</signal>
+   <receiver>dialogLogin</receiver>
+   <slot>loginMain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonRegister</sender>
+   <signal>clicked()</signal>
+   <receiver>dialogLogin</receiver>
+   <slot>userRegister()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>dialogLogin</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>loginMain()</slot>
+  <slot>userRegister()</slot>
+  <slot>exit()</slot>
+ </slots>
+</ui>
